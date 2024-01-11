@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <header onmouseover="changeBackgroundHeaderColor()" onmouseout="restoreBackgroundHeaderColor()" class="container">
+        <div class="logo-wraper">
+          <a
+            href="https://github.com/Vinicius-Bitencourt-Pereira?tab=repositories"
+            target="_blank"
+            ><img class="avatar" src="assets/github-mark.svg" alt="Logo github"
+          /></a>
+          <h1>Vinícius Bitencourt Pereira</h1>
+        </div>
+        <img
+          class="avatar"
+          src="https://avatars.githubusercontent.com/u/77156693?v=4"
+          alt="Avatar pessoal"
+        />
+      </header>
+      <main>
+        <div class="container">
+          <h1>Portifólio</h1>
+          <section class="gallery">
+            <figure class="item">
+              <img src="assets/bank-line-img.png" alt="Print do projeto bankline" />
+              <figcaption class="details">
+                <h2 onclick="showTitle(this.innerText)">bankline-api</h2>
+                <p>
+                  Projeto de uma api de banco digital desenvolvida durante uma treinamento de Back-end Java na DIO.
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure class="item">
+              <img src="assets/ds-movie-img.png" alt="Print do projeto DS Movie" />
+              <figcaption class="details">
+                <h2 onclick="showTitle(this.innerText)">DS Movie</h2>
+                <p>
+                  Projeto full stack Java React da escola de progamadores Devsuperior do professor Nélio Alves.
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure class="item">
+              <img src="assets/ds-meta-img.png" alt="Print do projeto DS Meta" />
+              <figcaption class="details">
+                <h2 onclick="showTitle(this.innerText)">DS Meta</h2>
+                <p>
+                  Projeto full stack Java React da escola de progamadores Devsuperior do professor Nélio Alves.
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure class="item">
+              <img src="assets/django-funcionario-img.png" alt="Print do projeto django-funcionarios" />
+              <figcaption class="details">
+                <h2 onclick="showTitle(this.innerText)">Django funcionário</h2>
+                <p>
+                 Projeto full stack ssr desenvolvido com Django e Bootstrap, simulando um CRUD de funcionários.
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure class="item">
+              <img src="assets/api-img.jpg" alt="" />
+              <figcaption class="details">
+                <h2 onclick="showTitle(this.innerText)">client-api</h2>
+                <p>
+                  Projeto Back-end desenvolvido com Spring Boot. Uma api de cadastro de clientes.
+                </p>
+              </figcaption>
+            </figure>
+          </section>
+        </div>
+      </main>
+      <footer class="container">© 2024 - @Futuro-DEV[ECO]</footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
